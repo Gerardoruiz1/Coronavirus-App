@@ -1,0 +1,12 @@
+.row .card{
+    text-align: center;
+    border:0;
+    box-shadow: 1px 5px 10px rgb(142, 138, 138);
+}
+
+.row .card .fa {
+    font-size: 31px;
+}
+.row .card h5{
+    font-size: 19px;
+}

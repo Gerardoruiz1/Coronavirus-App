@@ -1,0 +1,21 @@
+<nav class = "sidebar">
+    <div class = "logo">
+        <a [routerLink]="'summary'">
+            <img src="https://media.defense.gov/2020/Mar/03/2002258347/1280/1280/0/200303-D-ZZ999-112M.JPG" alt="Logo"/>
+        </a>
+
+    </div>
+    <div class="navigation">
+        <ul class="list-unstyled">
+            <li [routerLink]="'summary'" routerLinkActive="active">
+                <a>Summary</a>
+            </li>
+            <li [routerLink]="'country'" routerLinkActive="active">
+                <a>By Country</a>
+            </li>
+            <li [routerLink]="'live'" routerLinkActive="active">
+                <a>Live</a>
+            </li>
+        </ul>
+    </div>
+</nav>
