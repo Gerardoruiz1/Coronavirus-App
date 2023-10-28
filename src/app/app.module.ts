@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { SummaryModule } from './summary/summary.module';
 import { CountryModule } from './country/country.module';
 import { LiveModule } from './live/live.module';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LiveModule } from './live/live.module';
     SummaryModule,
     CountryModule,
     LiveModule,
-    HttpClientModule
+    HttpClientModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

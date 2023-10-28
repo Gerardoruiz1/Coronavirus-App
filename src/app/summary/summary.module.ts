@@ -7,6 +7,8 @@ import { SummaryCardsComponent } from './components/summary-cards/summary-cards.
 import { ConfirmedByCountryComponent } from './components/confirmed-by-country/confirmed-by-country.component';
 import { SharedModule } from '../shared/shared.module';
 import { CountryChartComponent } from './components/country-chart/country-chart.component';
+import { NgChartsModule } from 'ng2-charts';
+
 
 
 
@@ -21,6 +23,8 @@ import { CountryChartComponent } from './components/country-chart/country-chart.
     CommonModule,
     SummaryRoutingModule,
     SharedModule,
+    NgChartsModule
+ 
 
   ]
 })
