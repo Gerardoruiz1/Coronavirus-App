@@ -3,6 +3,7 @@ import { Component, Input, OnChanges, OnInit, OnDestroy} from '@angular/core';
 import { SearchService } from 'src/app/shared/services/search.service';
 import { Subscription } from 'rxjs';
 
+
 @Component({
   selector: 'app-data-table',
   templateUrl: './data-table.component.html',
@@ -28,3 +29,4 @@ ngOnDestroy(): void {
     this.subscription.unsubscribe(); //previene que vote memoria cuando se activa
 }
 }
+

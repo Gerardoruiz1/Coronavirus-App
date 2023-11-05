@@ -17,13 +17,14 @@ import { NgChartsModule } from 'ng2-charts';
     SummaryPageComponent,
     SummaryCardsComponent,
     ConfirmedByCountryComponent,
-    CountryChartComponent
+    CountryChartComponent,
   ],
   imports: [
     CommonModule,
     SummaryRoutingModule,
     SharedModule,
-    NgChartsModule
+    NgChartsModule,
+
  
 
   ]

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-confirmed-by-country',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ConfirmedByCountryComponent {
 
+@Output() country = new EventEmitter<string>();
+
+passCountryData(searchTerm: string) {
+
+this.country.emit(searchTerm);
+}
 }

@@ -9,6 +9,11 @@ import { SummaryModule } from './summary/summary.module';
 import { CountryModule } from './country/country.module';
 import { LiveModule } from './live/live.module';
 import { NgChartsModule } from 'ng2-charts';
+import { LoaderComponent } from 'ng-loaders';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +27,9 @@ import { NgChartsModule } from 'ng2-charts';
     CountryModule,
     LiveModule,
     HttpClientModule,
-    NgChartsModule
+    NgChartsModule,
+    LoaderComponent,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

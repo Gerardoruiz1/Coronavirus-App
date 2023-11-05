@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,10 +12,12 @@ export class DataService {
     return this.http.get('https://covid-api.com/api/reports/total');
   }
   getAllData() {
+  
     return this.http.get('https://covid-api.com/api/reports');
+   
   }
-  getCarData(){
-    
+  getPieData(country: string){
+    return this.http.get(`https://covid-api.com/api/reports/total?iso=${country}`);
   }
 
 }

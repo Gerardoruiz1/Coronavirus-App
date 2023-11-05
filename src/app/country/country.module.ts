@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { CountryRoutingModule } from './country-routing.module';
 import { CountryPageComponent } from './components/country-page/country-page.component';
@@ -15,7 +16,8 @@ import { DataTableComponent } from './components/data-table/data-table.component
   imports: [
     CommonModule,
     CountryRoutingModule,
-    SharedModule
+    SharedModule,
+    MatProgressSpinnerModule
   ]
 })
 export class CountryModule { }

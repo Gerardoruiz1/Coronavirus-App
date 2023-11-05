@@ -14,8 +14,10 @@ export class CountryPageComponent implements OnInit {
     private searchService:SearchService
     ) {}
 
+  isLoading:boolean = true;
   ngOnInit(): void {
-      this.dataService.getAllData().subscribe((data:any) => {this.covidData = data;});
+      this.dataService.getAllData().subscribe((data:any) => {this.covidData = data; this.isLoading = false;});
+      
   }
 
   searchCountry(country:string){
