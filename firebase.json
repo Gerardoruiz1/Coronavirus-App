@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "covid2023-test-dev",
+    "public": "dist/covid3",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
