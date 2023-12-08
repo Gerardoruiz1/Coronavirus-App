@@ -1,0 +1,10 @@
+
+.btn-summary, .btn-country {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .btn-summary, .btn-country {
+        display: inline-block;
+    }
+}

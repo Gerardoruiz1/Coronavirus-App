@@ -3,3 +3,9 @@
     width:auto;
     
 }
+
+@media (max-width: 768px) {
+    .container-fluid {
+        margin-left: 0;
+    }
+}
