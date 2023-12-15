@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "dzeusrnd"
-  }
+  },
+  "targets": {
+    "dzeusrnd": {
+      "hosting": {
+        "dev": [
+          "covid2023-test-dev"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

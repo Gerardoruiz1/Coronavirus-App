@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "covid2023-test-dev",
+    "target": "dev",
     "public": "dist/covid3",
     "ignore": [
       "firebase.json",
