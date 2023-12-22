@@ -1,10 +1,10 @@
 
-.btn-summary, .btn-country {
+.btn-summary, .btn-country, .btn-viewers {
     display: none;
 }
 
 @media (max-width: 768px) {
-    .btn-summary, .btn-country {
+    .btn-summary, .btn-country, .btn-viewers {
         display: inline-block;
     }
 }

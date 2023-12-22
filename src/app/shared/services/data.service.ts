@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+//import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 
 @Injectable({
@@ -8,16 +8,16 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 })
 export class DataService {
 
-  constructor(private http: HttpClient, private firestore: AngularFirestore) {}
+  constructor(private http: HttpClient) {}
 //CRUD
 //create
-  addPerson(firstName: string, lastName: string, dateOfBirth: any) {
-    return this.firestore.collection('people').add({
-      firstName,
-      lastName,
-      dateOfBirth // Ensure this is a Firebase Timestamp or a String
-    });
-  }
+ // addPerson(firstName: string, lastName: string, dateOfBirth: any) {
+   // return this.firestore.collection('people').add({
+     // firstName,
+     // lastName,
+      //dateOfBirth // Ensure this is a Firebase Timestamp or a String
+    //});
+  //}
   //read
   //update
   //delete

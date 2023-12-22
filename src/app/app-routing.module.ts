@@ -13,8 +13,8 @@ loadChildren:
  () => import('./summary/summary.module').then(m=>m.SummaryModule)
 },
 
-{ path: 'live',
-loadChildren: () => import('./live/live.module').then(m=>m.LiveModule)
+{ path: 'viewers',
+loadChildren: () => import('./viewers/live.module').then(m=>m.ViewersModule)
 },
 
 { path: 'country',

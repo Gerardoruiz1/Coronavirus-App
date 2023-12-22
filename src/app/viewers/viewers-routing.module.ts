@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LivePageComponent } from './components/live-page/live-page.component';
+import { ViewersPageComponent } from './components/viewers-page/viewers-page.component';
 
 const routes: Routes = [
-  { path: '', component:LivePageComponent}
+  { path: '', component:ViewersPageComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LiveRoutingModule { }
+export class ViewersRoutingModule { }

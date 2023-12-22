@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { SummaryModule } from './summary/summary.module';
 import { CountryModule } from './country/country.module';
-import { LiveModule } from './live/live.module';
+import { ViewersModule } from './viewers/live.module';// here is the viewer module
 import { NgChartsModule } from 'ng2-charts';
 import { LoaderComponent } from 'ng-loaders';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -47,7 +47,7 @@ getDocs(colRef)
     SharedModule,
     SummaryModule,
     CountryModule,
-    LiveModule,
+    ViewersModule,  
     HttpClientModule,
     NgChartsModule,
     LoaderComponent,
