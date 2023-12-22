@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 
 @Injectable({
@@ -7,7 +8,19 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private firestore: AngularFirestore) {}
+//CRUD
+//create
+  addPerson(firstName: string, lastName: string, dateOfBirth: any) {
+    return this.firestore.collection('people').add({
+      firstName,
+      lastName,
+      dateOfBirth // Ensure this is a Firebase Timestamp or a String
+    });
+  }
+  //read
+  //update
+  //delete
   getSummaryData(){
     return this.http.get('https://covid-api.com/api/reports/total');
   }
