@@ -1,0 +1,18 @@
+.btn-custom {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background-color: #006400; /* This is a dark green color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.3em;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #004d00; /* Slightly darker green color on hover */
+    color: white;
+  }
+  

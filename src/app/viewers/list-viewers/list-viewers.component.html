@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Birth Date</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let viewer of Viewer; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{viewer.firstname}}</td>
+            <td>{{viewer.lastname}}</td>
+            <td>{{viewer.birthdate}}</td>
+            <td>
+                <span (click)="removeViewer(viewer)" class="btn btn-danger">Delete</span> &nbsp;
+                <span routerLink="/update-viewer/{{viewer.id}}" class="btn btn-primary">Edit</span>
+            </td>
+        </tr>
+
+    </tbody>
+
+
+</table>

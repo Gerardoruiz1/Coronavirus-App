@@ -9,8 +9,7 @@ const routes: Routes = [
   },
   
   { path: 'summary',
-loadChildren:
- () => import('./summary/summary.module').then(m=>m.SummaryModule)
+loadChildren: () => import('./summary/summary.module').then(m=>m.SummaryModule)
 },
 
 { path: 'viewers',

@@ -17,6 +17,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, } from 'firebase/firestore';//imoprt this 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //Adjust the path as necessary
 
 
@@ -39,6 +40,9 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     NgChartsModule,
     LoaderComponent,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
