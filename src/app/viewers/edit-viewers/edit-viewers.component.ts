@@ -45,8 +45,8 @@ import { ViewerServiceService } from '../viewer-service.service';
   onSubmit(){
     const id : any = this.act.snapshot.paramMap.get('id');
     if (id){
-    this.viewerService.updateViewer(this.editForm.value, id);
-    this.router.navigate(['list-student']);
+    this.viewerService.updateViewer(id,this.editForm.value);
+    this.router.navigate(['list-viewers']);
     }
     else{
       console.error('No ID provided. Ensure you have an ID to edit a viewer.');
