@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Viewer } from 'src/app/viewer.model';
 import { ViewerServiceService } from '../viewer-service.service';
 
+
 @Component({
   selector: 'app-list-viewers',
   templateUrl: './list-viewers.component.html',

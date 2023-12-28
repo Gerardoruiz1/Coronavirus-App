@@ -9,12 +9,13 @@ export class ViewerServiceService {
 
   constructor(private firestore: AngularFirestore) {}
 
-  getViewerList() {
-    return this.firestore.collection('viewers').snapshotChanges();
-  }
 
   getViewerDoc(id: string) {
     return this.firestore.collection('viewers').doc(id).valueChanges();
+  }
+
+    getViewerList() {
+    return this.firestore.collection('viewers').snapshotChanges();
   }
 
 createViewer(viewer: Viewer): Promise<string> {
@@ -31,6 +32,10 @@ createViewer(viewer: Viewer): Promise<string> {
   });
 }
 
+
+  deleteViewer(viewer : Viewer) {
+    return this.firestore.collection('viewers').doc(viewer.id).delete();
+  }
   updateViewer(id: string, viewer: Viewer) {
     return this.firestore.collection('viewers').doc(id).update(
       {
@@ -40,9 +45,5 @@ createViewer(viewer: Viewer): Promise<string> {
 
       }
     );
-  }
-
-  deleteViewer(viewer : Viewer) {
-    return this.firestore.collection('viewers').doc(viewer.id).delete();
   }
 }

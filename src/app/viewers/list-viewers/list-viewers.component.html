@@ -16,7 +16,7 @@
             <td>{{viewer.birthdate}}</td>
             <td>
                 <span (click)="removeViewer(viewer)" class="btn btn-danger">Delete</span> &nbsp;
-                <span routerLink="/update-viewer/{{viewer.id}}" class="btn btn-primary">Edit</span>
+                <span routerLink="/update-viewers/{{viewer.id}}" class="btn btn-primary">Edit</span>
             </td>
         </tr>
 
@@ -24,3 +24,4 @@
 
 
 </table>
+<!--{ path: 'update-viewers/:id', component: EditViewersComponent}-->

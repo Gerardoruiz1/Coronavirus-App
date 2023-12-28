@@ -4,18 +4,21 @@ import { ViewersPageComponent } from './components/viewers-page/viewers-page.com
 import { ListViewersComponent } from './list-viewers/list-viewers.component';
 import { EditViewersComponent } from './edit-viewers/edit-viewers.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
 
 
 @NgModule({
   declarations: [
     ViewersPageComponent,
     ListViewersComponent,
-    EditViewersComponent
+    EditViewersComponent,
   ],
   imports: [
     FormsModule,
     ReactiveFormsModule,
     ViewersRoutingModule,
+    CommonModule
   ]
 })
 export class ViewersModule { }
