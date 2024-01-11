@@ -15,6 +15,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '../environments/environments';
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, } from 'firebase/firestore';//imoprt this 
+
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AuthModule } from './auth/auth.module';
+
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -29,6 +33,8 @@ import { CommonModule } from '@angular/common';
     AppComponent
   ],
   imports: [
+    AuthModule,
+    AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     BrowserModule,
