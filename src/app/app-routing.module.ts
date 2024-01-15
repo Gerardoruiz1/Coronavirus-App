@@ -11,9 +11,15 @@ const routes: Routes = [
 { path: '',redirectTo:'/summary',pathMatch:'full'},  
 { path: 'register',component: RegisterComponent },
 { path: 'login', component: LoginComponent },
-{ path: 'summary',loadChildren: () => import('./summary/summary.module').then(m=>m.SummaryModule),canActivate: [AngularFireAuthGuard],data: { authGuardPipe: redirectUnauthorizedToRegister }},
-{ path: 'viewers',loadChildren: () => import('./viewers/live.module').then(m=>m.ViewersModule) ,canActivate: [AngularFireAuthGuard],data: { authGuardPipe: redirectUnauthorizedToRegister }},
-{ path: 'country',loadChildren: () => import('./country/country.module').then(m=>m.CountryModule),canActivate: [AngularFireAuthGuard],data: { authGuardPipe: redirectUnauthorizedToRegister }},
+{ path: 'summary',loadChildren: () => import('./summary/summary.module').then(m=>m.SummaryModule),
+canActivate: [AngularFireAuthGuard],
+data: { authGuardPipe: redirectUnauthorizedToRegister }},
+{ path: 'viewers',loadChildren: () => import('./viewers/live.module').then(m=>m.ViewersModule),
+canActivate: [AngularFireAuthGuard],
+data: { authGuardPipe: redirectUnauthorizedToRegister }},
+{ path: 'country',loadChildren: () => import('./country/country.module').then(m=>m.CountryModule),
+canActivate: [AngularFireAuthGuard],
+data: { authGuardPipe: redirectUnauthorizedToRegister }},
 
 
 ];
