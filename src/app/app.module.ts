@@ -18,9 +18,10 @@ import { getFirestore, collection, getDocs, } from 'firebase/firestore';//imoprt
 
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AuthModule } from './auth/auth.module';
-
-
+import { getAuth } from "firebase/auth"
 import { AngularFireModule } from '@angular/fire/compat';
+
+
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
