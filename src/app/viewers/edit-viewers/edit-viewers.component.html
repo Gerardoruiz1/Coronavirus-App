@@ -9,16 +9,26 @@
     <div class="mb-3">
       <label>First Name</label>
       <input type="text" formControlName="firstname" class="form-control" placeholder="firstname" required>
+      <div *ngIf="editForm.get('firstname')?.touched && editForm.get('firstname')?.invalid" class="alert alert-danger">
+        First name is required.
+      </div>
+  
     </div>
   
     <div class="mb-3">
       <label>Last Name</label>
       <input type="text" formControlName="lastname" class="form-control" placeholder="lastname" required>
+      <div *ngIf="editForm.get('lastname')?.touched && editForm.get('lastname')?.invalid" class="alert alert-danger">
+        Last name is required.
+      </div>
     </div>
   
     <div class="mb-3">
       <label>Birthdate</label>
       <input type="date" formControlName="birthdate" class="form-control" placeholder="birthdate" required>
+      <div *ngIf="editForm.get('birthdate')?.touched && editForm.get('birthdate')?.invalid" class="alert alert-danger">
+        Birthdate is required.
+      </div>
     </div>
   
   
