@@ -12,7 +12,9 @@ export class LoginComponent {
   password: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
-
+  navigateToRegister() {
+    this.router.navigate(['/register']);
+  }
   login() {
     this.authService.login(this.email, this.password).then(() => {
       this.router.navigate(['/summary']);
