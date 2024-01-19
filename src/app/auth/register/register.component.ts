@@ -9,14 +9,20 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
   email: string = '';
   password: string = '';
+  errorMessage: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
 
   register() {
     this.authService.register(this.email, this.password).then(() => {
       this.router.navigate(['/login']);
-    }).catch(error => {
-      console.error('Registration error:', error);
+    }).catch(error => {  
+      if (error.code === 'auth/email-already-in-use') {
+        this.errorMessage = 'User already exists. Please use a different email.';
+    }
+     else {
+      this.errorMessage = 'Registration error. Please try again.';
+    }
     });
   }
 }

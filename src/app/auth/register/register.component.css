@@ -1,4 +1,9 @@
 /* src/app/auth/register/register.component.css */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
 .register-container {
     display: flex;
     justify-content: center;

@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   email: string = '';
   password: string = '';
+  errorMessage: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
   navigateToRegister() {
@@ -19,7 +20,7 @@ export class LoginComponent {
     this.authService.login(this.email, this.password).then(() => {
       this.router.navigate(['/summary']);
     }).catch(error => {
-      console.error('Login error:', error);
+      this.errorMessage = 'Authentication failed. Please check your credentials.';
     });
   }
 }

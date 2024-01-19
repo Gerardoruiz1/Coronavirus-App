@@ -1,4 +1,9 @@
 /* src/app/auth/login/login.component.css */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
 .login-container {
   display: flex;
   justify-content: center;
