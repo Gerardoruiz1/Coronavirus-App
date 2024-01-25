@@ -12,6 +12,9 @@ export class RegisterComponent {
   errorMessage: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
+  navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
 
   register() {
     this.authService.register(this.email, this.password).then(() => {

@@ -8,5 +8,6 @@
       <button type="submit">Register</button>
     </form>
     <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+    <button class="btn-login" (click)="navigateToLogin()">Already have an account? Login</button>
   </div>
 </div>

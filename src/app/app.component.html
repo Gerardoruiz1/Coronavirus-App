@@ -1,5 +1,7 @@
-<app-topbar></app-topbar>
-<app-sidebar></app-sidebar>
+<ng-container *ngIf="isLoggedIn$ | async">
+   <app-topbar></app-topbar>
+   <app-sidebar></app-sidebar>
+</ng-container>
 <div class="container-fluid">
    <router-outlet></router-outlet>
 </div>
